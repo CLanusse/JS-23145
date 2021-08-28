@@ -29,8 +29,11 @@ let producto1 = {
     id: 1,
     nombre: 'Remera JX',
     precio: 1600,
-    talle: 'L',
-    color: 'negro'
+    talles: ['L', 'M', 'S', 'XS'],
+    color: 'negro',
+    otraProp: {
+        otra: "otra"
+    }
 }
 
 let producto2 = {
