@@ -86,6 +86,13 @@ productos.forEach( (prod) => {
 
     $(`#add${prod.id}`).on('click', () => {
         agregarAlCarrito(prod.id)
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Producto agregado al carrito!',
+            text: `Agregaste un ${prod.nombre} al carrito`
+          })
+    
     })
 
     // const boton = document.getElementById(`add${prod.id}`)
