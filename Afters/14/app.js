@@ -64,7 +64,8 @@ const callApiAsync = async (id) => {
     const response = await fetch(`https://www.breakingbadapi.com/api/quotes/${id}`)
     const data = await response.json()
 
-    const {quote, author, quote_id} = data
+    console.log(data)
+    const {quote, author, quote_id} = data[0]
     
     quoteDOM.innerText = quote
     autorDOM.innerText = author
